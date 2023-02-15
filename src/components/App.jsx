@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
-import { Notification } from 'components/Notification/Notification';
-import { Section } from 'components/Section/Section';
-import { Statistics } from 'components/Statistics/Statistics';
+import { FeedbackOptions } from 'components/FeedbackOptions';
+import { Notification } from 'components/Notification';
+import { Section } from 'components/Section';
+import { Statistics } from 'components/Statistics';
 
 export const App = () => {
   const [good, setGood] = useState(0);
@@ -13,13 +13,13 @@ export const App = () => {
     const { name } = e.target;
     switch (name) {
       case 'good':
-        setGood(state => state + 1);
+        setGood(good => good + 1);
         break;
       case 'neutral':
-        setNeutral(state => state + 1);
+        setNeutral(neutral => neutral + 1);
         break;
       case 'bad':
-        setBad(state => state + 1);
+        setBad(bad => bad + 1);
         break;
       default:
         return;

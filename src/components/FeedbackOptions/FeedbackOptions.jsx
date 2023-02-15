@@ -1,4 +1,4 @@
-import { Button } from 'components/Button/Button';
+import { Button } from 'components/Button';
 import PropTypes from 'prop-types';
 import { Wrapper } from './FeedbackOptions.styled';
 
